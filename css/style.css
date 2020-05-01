@@ -1,28 +1,144 @@
 /* Generali */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+/* .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+ } */
 
-/* .classediesempio {
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  /* text-indent: -3px; */
+}
+
+a {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+}
+
+h1  {
+  font-size: 55px;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1550px;
+}
+/* fine generali */
+
+/* HEADER */
+/* Header top */
+header .header-top > div {
+ padding: 20px 0;
+}
+
+header .header-top li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header .header-top .menu {
+ text-align: right;
+}
+
+header .header-top .menu li {
+  padding-left: 20px;
+}
+
+header .header-top .language li {
+  padding-left: 10px;
+}
+
+header .header-top .language #ita {
+ padding: 0 10px;
+ border-left: 1px solid black; /*Si possono unire? */
+ border-right: 1px solid black;
+}
+
+/* Jumbotron */
+header .jumbotron {
+  position: relative;
+  height: 700px;
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+header .jumbotron .jumbotron-text {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-} */
-
-.clearfix:after {
-   content: "";
-   display: table;
-   clear: both;
- }
-
-body {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
-/* fine generali */
+
+header .jumbotron .jumbotron-text p {
+  padding-bottom: 30px;
+}
+
+header .jumbotron .jumbotron-text a {
+  display: inline-block;
+}
+
+header .jumbotron .jumbotron-text img {
+  width: 200px;
+  padding-left: 2px;
+}
+/* fine header */
+
+/* MAIN */
+/* Main top */
+main .main-top {
+  padding: 25px 0;
+  text-align: center;
+}
+
+main .main-top a{
+  color: blue;
+  font-size: 20px;
+}
+
+main .main-top img{
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+
+main .main-top .helbizgo {
+  background-color: #fafafa;
+  margin: 25px;
+}
+
+main .main-top .helbizbike {
+  background-color: #fafafa;
+  margin: 25px;
+}
+
+/* Main center */
+main .main-center #main-center-sfondo {
+  background-image:url(../img/HelbizBanner.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+}
 
 /* versione mobile */
 @media all and (max-width: 767px) {
