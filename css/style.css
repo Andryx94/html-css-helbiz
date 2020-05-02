@@ -178,7 +178,24 @@ main .main-center .container .iphone img {
 /* Main bottom */
 main .container.main-bottom {
   max-width: 1650px;
+  text-align: center;
+  color: white;
 }
+
+main .container.main-bottom h1{
+  padding-bottom: 0px;
+}
+
+main .container.main-bottom a{
+  color: white;
+  font-size: 25px;
+}
+
+main .container.main-bottom p{
+  font-size: 25px;
+  padding: 20px 0;
+}
+
 main .main-bottom .smart, main .main-bottom #app .app-text, main .main-bottom #city .city-text {
   position: relative;
   background-size: cover;
@@ -190,20 +207,36 @@ main .main-bottom .smart {
   background-image: url(../img/ScooterHelbiz-2400.jpg);
   background-position: left;
   height: 580px;
-  margin-top: 100px;
+  margin-top: 90px;
   margin-bottom: 0;
 }
 
+main .main-bottom .smart .centrato {
+  left: 75%;
+  width: 380px;
+}
+
 main .main-bottom #app .app-text {
-  background: linear-gradient(to bottom, #41566a , #263039), url(../img/HelbiZAPP.png);
+  background-image: url(../img/HelbiZAPP.png), linear-gradient(to bottom, #41566a , #263039);
   background-repeat: no-repeat;
-  background-position-y: -585%;
+  background-position: center;
+  background-position-y: 190px, 0;
+  background-size: 560px, auto;
+
   margin-right: 15px;
+}
+
+main .main-bottom #app .app-text .centrato {
+  top: 22%;
 }
 
 main .main-bottom #city .city-text {
   background-image: url(../img/Cities-1500.jpg);
   margin-left: 15px;
+}
+
+main .main-bottom #city .city-text .centrato {
+  top: 22%;
 }
 
 /* Main social */
@@ -254,12 +287,37 @@ main .main-social .centrato a{
     margin-top: 30px;
   }
 
+  main .main-bottom .smart {
+    margin-top: 0px;
+  }
+
   main .main-bottom #app .app-text {
     margin-right: 0px;
   }
 
   main .main-bottom #city .city-text {
     margin-left: 0px;
+  }
+
+  main .main-bottom .smart .centrato {
+    left: 50%;
+  }
+
+  main .main-bottom #app .app-text {
+    background-position-y: 370px, 0;
+    background-size: 450px, auto;
+  }
+
+  main .main-bottom #app .app-text .centrato {
+    top: 50%;
+  }
+
+  main .main-bottom #city .city-text .centrato {
+    top: 50%;
+  }
+
+  main .main-social .centrato {
+    padding: 25px 50px;
   }
 }
 /* fine versione mobile */
@@ -274,6 +332,28 @@ main .main-social .centrato a{
   main .main-center .container .iphone img {
     top: 125%;
     width: 250px;
+  }
+
+  main .main-bottom .smart .centrato {
+    left: 50%;
+  }
+
+  main .main-bottom #app .app-text {
+    background-position-y: 370px, 0;
+    background-size: 440px, auto;
+
+  }
+
+  main .main-bottom #app .app-text .centrato {
+    top: 50%;
+  }
+
+  main .main-bottom #city .city-text .centrato {
+    top: 50%;
+  }
+
+  main .main-social .centrato {
+    padding: 50px 140px;
   }
 }
 /* fine versione tablet  */
