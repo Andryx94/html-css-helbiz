@@ -10,8 +10,11 @@ body {
   font-weight: 600;
 }
 
-a {
+li {
   list-style-type: none;
+}
+
+a {
   color: black;
   text-decoration: none;
   font-size: 15px;
@@ -51,6 +54,11 @@ h4 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.loghi {
+  width: 200px;
+  padding-left: 2px;
 }
 /* fine generali */
 
@@ -102,11 +110,6 @@ header .jumbotron .jumbotron-text p {
 
 header .jumbotron .jumbotron-text a {
   display: inline-block;
-}
-
-header .jumbotron .jumbotron-text img {
-  width: 200px;
-  padding-left: 2px;
 }
 /* fine header */
 
@@ -222,7 +225,6 @@ main .main-bottom #app .app-text {
   background-position: center;
   background-position-y: 190px, 0;
   background-size: 560px, auto;
-
   margin-right: 15px;
 }
 
@@ -245,6 +247,7 @@ main .main-social {
   background-image: url(../img/Social-Banner.jpg);
   background-size:contain;
   height: 440px;
+  margin-bottom: 30px;
 }
 
 main .main-social .centrato {
@@ -265,8 +268,65 @@ main .main-social .centrato li:last-child{
 }
 
 main .main-social .centrato a{
-  font-size: 40px;
+  font-size: 30px;
 }
+/* FOOTER */
+footer {
+  position: relative;
+  background-color: black;
+  height: 800px;
+}
+/* footer top */
+footer .footer-top {
+  padding-top: 100px;
+}
+
+footer .footer-top h4 {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+footer .footer-top li {
+  padding-bottom: 20px;
+}
+
+footer .footer-top a {
+  color: rgb(77, 77, 77);
+  font-size: 18px;
+}
+
+/* footer center  */
+footer .footer-center {
+  border-top: 1px solid rgb(77, 77, 77, 0.4);
+  border-bottom: 1px solid rgb(77, 77, 77,0.4);
+  padding: 40px 0;
+  margin-top: 20px;
+}
+footer .footer-center li{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+footer .footer-center i{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 25px;
+}
+
+footer .footer-center p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+}
+/* footer bottom */
+footer .footer-bottom {
+  text-align: center;
+}
+
+footer .footer-bottom .loghi {
+  width: 120px;
+  padding-top: 20px;
+}
+
 /* versione mobile */
 @media all and (max-width: 767px) {
   main .main-center .container > div  {
@@ -289,6 +349,7 @@ main .main-social .centrato a{
 
   main .main-bottom .smart {
     margin-top: 0px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   }
 
   main .main-bottom #app .app-text {
@@ -319,6 +380,18 @@ main .main-social .centrato a{
   main .main-social .centrato {
     padding: 25px 50px;
   }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-top img{
+    padding-bottom: 20px;
+  }
+
+  footer .footer-center ul{
+    padding-bottom: 20px;
+  }
 }
 /* fine versione mobile */
 
@@ -332,6 +405,10 @@ main .main-social .centrato a{
   main .main-center .container .iphone img {
     top: 125%;
     width: 250px;
+  }
+
+  main .main-bottom .smart {
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   }
 
   main .main-bottom .smart .centrato {
@@ -355,10 +432,17 @@ main .main-social .centrato a{
   main .main-social .centrato {
     padding: 50px 140px;
   }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-top img{
+    padding-bottom: 20px;
+  }
+
+  footer .footer-center ul{
+    padding-bottom: 20px;
+  }
 }
 /* fine versione tablet  */
-
-/* versione desktop */
-@media all and (min-width: 992px){
-}
-/* fine versione desktop */
