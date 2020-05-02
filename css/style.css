@@ -176,13 +176,64 @@ main .main-center .container .iphone img {
   max-width: 87%;
 }
 /* Main bottom */
-main .main-bottom {
+main .container.main-bottom {
+  max-width: 1650px;
+}
+main .main-bottom .smart, main .main-bottom #app .app-text, main .main-bottom #city .city-text {
   position: relative;
-  background-image: url(../img/ScooterHelbiz-2400.jpg);
-  height: 300px;
-  margin-top: 100px;
+  background-size: cover;
+  height: 530px;
+  margin: 30px 0;
 }
 
+main .main-bottom .smart {
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-position: left;
+  height: 580px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+main .main-bottom #app .app-text {
+  background: linear-gradient(to bottom, #41566a , #263039), url(../img/HelbiZAPP.png);
+  background-repeat: no-repeat;
+  background-position-y: -585%;
+  margin-right: 15px;
+}
+
+main .main-bottom #city .city-text {
+  background-image: url(../img/Cities-1500.jpg);
+  margin-left: 15px;
+}
+
+/* Main social */
+main .main-social {
+  position: relative;
+  background-image: url(../img/Social-Banner.jpg);
+  background-size:contain;
+  height: 440px;
+}
+
+main .main-social .centrato {
+  background-color: white;
+  padding: 70px 160px;
+  color: black;
+  text-align: center;
+}
+
+main .main-social .centrato li{
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 25px;
+}
+
+main .main-social .centrato li:last-child{
+  padding-right: 0px;
+}
+
+main .main-social .centrato a{
+  font-size: 40px;
+}
 /* versione mobile */
 @media all and (max-width: 767px) {
   main .main-center .container > div  {
@@ -201,6 +252,14 @@ main .main-bottom {
 
   main .main-bottom {
     margin-top: 30px;
+  }
+
+  main .main-bottom #app .app-text {
+    margin-right: 0px;
+  }
+
+  main .main-bottom #city .city-text {
+    margin-left: 0px;
   }
 }
 /* fine versione mobile */
