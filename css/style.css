@@ -1,11 +1,6 @@
 /* Generali */
-.clearfix:after {
-   content: "";
-   display: table;
-   clear: both;
- }
-
 body {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
@@ -18,6 +13,10 @@ a {
   color: black;
   text-decoration: none;
   font-size: 15px;
+}
+
+a:hover {
+  color: orange;
 }
 
 p {
@@ -62,35 +61,43 @@ h4 {
 }
 /* fine generali */
 
-/* HEADER */
-/* Header top */
-header .header-top > div {
+/* MENU */
+ .menu-fixed {
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  top: 0%;
+  width: 100%;
+}
+
+.menu-fixed .container > div {
  padding: 20px 0;
 }
 
-header .header-top li {
+.menu-fixed .container li {
   display: inline-block;
   text-transform: uppercase;
 }
 
-header .header-top .menu {
+.menu-fixed .container .menu {
  text-align: right;
 }
 
-header .header-top .menu li {
+.menu-fixed .container .menu li {
   padding-left: 20px;
 }
 
-header .header-top .language li {
+.menu-fixed .container .language li {
   padding-left: 10px;
 }
 
-header .header-top .language #ita {
+.menu-fixed .container .language #ita {
  padding: 0 10px;
  border-left: 1px solid black; /*Si possono unire? */
  border-right: 1px solid black;
 }
 
+/* HEADER */
 /* Jumbotron */
 header .jumbotron {
   position: relative;
@@ -98,6 +105,7 @@ header .jumbotron {
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   background-position: left;
+  margin-top: 62px;
 }
 
 header .jumbotron .jumbotron-text {
@@ -132,15 +140,9 @@ main .main-top a{
 main .main-top img{
   display: block;
   max-width: 100%;
-  text-align: center;
 }
 
-main .main-top .helbizgo {
-  background-color: #fafafa;
-  margin: 25px;
-}
-
-main .main-top .helbizbike {
+main .main-top .helbizgo, main .main-top .helbizbike {
   background-color: #fafafa;
   margin: 25px;
 }
@@ -165,7 +167,6 @@ main .main-center .container > div:last-child  {
   line-height: 1.5;
 }
 
-
 main .main-center .container .iphone  {
   height: 180px;
 }
@@ -179,34 +180,34 @@ main .main-center .container .iphone img {
   max-width: 87%;
 }
 /* Main bottom */
-main .container.main-bottom {
+main .main-bottom {
   max-width: 1650px;
   text-align: center;
   color: white;
 }
 
-main .container.main-bottom h1{
+main .main-bottom h2{
   padding-bottom: 0px;
 }
 
-main .container.main-bottom a{
+main .main-bottom a{
   color: white;
   font-size: 25px;
 }
 
-main .container.main-bottom p{
+main .main-bottom p{
   font-size: 25px;
   padding: 20px 0;
 }
 
-main .main-bottom .smart, main .main-bottom #app .app-text, main .main-bottom #city .city-text {
+main .main-bottom #smart, main .main-bottom #app .app-text, main .main-bottom #city .city-text {
   position: relative;
   background-size: cover;
   height: 530px;
   margin: 30px 0;
 }
 
-main .main-bottom .smart {
+main .main-bottom #smart {
   background-image: url(../img/ScooterHelbiz-2400.jpg);
   background-position: left;
   height: 580px;
@@ -214,7 +215,7 @@ main .main-bottom .smart {
   margin-bottom: 0;
 }
 
-main .main-bottom .smart .centrato {
+main .main-bottom #smart .centrato {
   left: 75%;
   width: 380px;
 }
@@ -274,7 +275,7 @@ main .main-social .centrato a{
 footer {
   position: relative;
   background-color: black;
-  height: 800px;
+  height: 700px;
 }
 /* footer top */
 footer .footer-top {
@@ -329,6 +330,8 @@ footer .footer-bottom .loghi {
 
 /* versione mobile */
 @media all and (max-width: 767px) {
+  /* MAIN */
+  /* main center */
   main .main-center .container > div  {
     padding-top: 30px;
     text-align: center;
@@ -343,11 +346,12 @@ footer .footer-bottom .loghi {
     top: 95%;
   }
 
+  /* main bottom */
   main .main-bottom {
     margin-top: 30px;
   }
 
-  main .main-bottom .smart {
+  main .main-bottom #smart {
     margin-top: 0px;
     text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   }
@@ -360,7 +364,7 @@ footer .footer-bottom .loghi {
     margin-left: 0px;
   }
 
-  main .main-bottom .smart .centrato {
+  main .main-bottom #smart .centrato {
     left: 50%;
   }
 
@@ -377,18 +381,22 @@ footer .footer-bottom .loghi {
     top: 50%;
   }
 
+  /* main social */
   main .main-social .centrato {
     padding: 25px 50px;
   }
 
+  /* FOOTER */
   footer {
     text-align: center;
   }
 
+  /* footer top */
   footer .footer-top img{
     padding-bottom: 20px;
   }
 
+  /* footer center */
   footer .footer-center ul{
     padding-bottom: 20px;
   }
@@ -397,6 +405,8 @@ footer .footer-bottom .loghi {
 
 /* versione tablet */
 @media all and (min-width: 768px) and (max-width:991px){
+  /* MAIN */
+  /* main center */
   main .main-center .container > div  {
     padding-top: 85px;
     text-align: center;
@@ -407,11 +417,12 @@ footer .footer-bottom .loghi {
     width: 250px;
   }
 
-  main .main-bottom .smart {
+  /* main bottom */
+  main .main-bottom #smart {
     text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   }
 
-  main .main-bottom .smart .centrato {
+  main .main-bottom #smart .centrato {
     left: 50%;
   }
 
@@ -429,18 +440,22 @@ footer .footer-bottom .loghi {
     top: 50%;
   }
 
+  /* main social */
   main .main-social .centrato {
     padding: 50px 140px;
   }
 
+  /* FOOTER */
   footer {
     text-align: center;
   }
 
+  /* footer top */
   footer .footer-top img{
     padding-bottom: 20px;
   }
 
+  /* footer center */
   footer .footer-center ul{
     padding-bottom: 20px;
   }
